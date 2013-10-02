@@ -28,7 +28,7 @@
 # Author:
 #   alexwilliamsca, tombell
 
-process.env['HUBOT_AUTH_ADMIN'] = 'mikeumus';
+process.env['HUBOT_AUTH_ADMIN'] = 'mikeumus'
 
 module.exports = (robot) ->
 

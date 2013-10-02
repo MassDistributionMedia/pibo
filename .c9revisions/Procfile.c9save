@@ -1,0 +1,3 @@
+{"ts":1380745250203,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"web: bin/hubot -a campfire -n Hubot\n"]],"start1":0,"start2":0,"length1":0,"length2":36}]],"length":36}
+{"contributors":[],"silentsave":false,"ts":1380745272695,"patch":[[{"diffs":[[0," -a "],[-1,"campf"],[0,"ir"],[-1,"e"],[1,"c"],[0," -n "]],"start1":14,"start2":14,"length1":16,"length2":11}]],"length":31,"saved":false}
+{"ts":1380745419627,"patch":[[{"diffs":[[0," -n "],[-1,"H"],[1,"h"],[0,"ubot"]],"start1":21,"start2":21,"length1":9,"length2":9}]],"length":31,"saved":false}
