@@ -4,6 +4,8 @@
     "advice.coffee",
     "abstract.coffee",
     "bang-bang.coffee",
+    "emoji.coffee",
+    "history.coffee",
     "reload.coffee",
     "update.coffee",
     "setenv.coffee",
