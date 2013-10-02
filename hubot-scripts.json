@@ -1,1 +1,12 @@
-["redis-brain.coffee", "shipit.coffee"]
+[
+
+    "shipit.coffee", 
+    "advice.coffee",
+    "abstract.coffee",
+    "bang-bang.coffee",
+    "reload.coffee",
+    "update.coffee",
+    "setenv.coffee",
+    "sosearch.coffee"
+    
+]

@@ -1,0 +1,1 @@
+{"ts":1380602608202,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"@echo off\n\nnpm install && node_modules\\.bin\\hubot.cmd %* "]],"start1":0,"start2":0,"length1":0,"length2":57}]],"length":57}

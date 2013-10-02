@@ -1,0 +1,1 @@
+process.env['REDISCLOUD_URL'] = 'redis://'+process.env.IP+':16379';

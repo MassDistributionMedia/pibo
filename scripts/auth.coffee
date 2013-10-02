@@ -28,6 +28,8 @@
 # Author:
 #   alexwilliamsca, tombell
 
+process.env['HUBOT_AUTH_ADMIN'] = 'mikeumus';
+
 module.exports = (robot) ->
 
   unless process.env.HUBOT_AUTH_ADMIN?
@@ -36,7 +38,7 @@ module.exports = (robot) ->
   if process.env.HUBOT_AUTH_ADMIN?
     admins = process.env.HUBOT_AUTH_ADMIN.split ','
   else
-    admins = []
+    admins = ["mikeumus"]
 
   class Auth
     hasRole: (user, roles) ->
