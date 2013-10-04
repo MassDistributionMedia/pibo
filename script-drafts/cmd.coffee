@@ -62,6 +62,7 @@ module.exports = (robot) ->
 #   `cmdNet update` - cmd to check if all cmdNet commands are installed and functioning via various tests. 
 #                   - if it passes any/all critial tests.
 #   Use array mapping for indexing commands: http://www.joelonsoftware.com/items/2006/08/01.html
+#    Mapping idea origin: http://stackoverflow.com/questions/3010840/loop-through-array-in-javascript
 #
 #
 # cmdArray
@@ -76,10 +77,14 @@ module.exports = (robot) ->
 #   `<scriptName> last error` - cmd responds with the scripts last error.
 #   `<scriptName> list errors` - cmd to list all unique errors reporting how many times each error was seen in output.
 #   `cmd for <short description of desired command outcome.>` - List commands with similar tags & semanticated versions of script descriptors.
-#   Append "notes.md" to bottom of any script if the global script manager says so.
-#    notes.md appendage can be set per script in the scripts header meta as well.
-#    notes.md on save is compared to what's appended to the bottom of the script and compares overwriting either in favor of the newer version.
-#    notes.md used for documentation as well (maybe via yui-docs).
+#  Append "notes.md" to bottom of any script if the global script manager says so.
+#   notes.md appendage can be set per script in the scripts header meta as well.
+#   notes.md on save is compared to what's appended to the bottom of the script and compares overwriting either in favor of the newer version.
+#   notes.md used for documentation as well (maybe via yui-docs).
+#  `Rate script` - asked after every script/cmd execution, logging all current meta and cmd input/output, rate script's outcome compared to it's understood desired outcome on a scale of 1-5.
+#   Script rating can be controlled from script-manager.coffee or in the script's header meta. 
+#   This data is used to train Hubot as to what methods result in success and therefore a higher average user rating. 
+#   `Hubot no|wrong|try again` - cmd to rate this outcome as a 0 and ask Hubot to iterate and try again for a more desirable outcome.
 #
 #
 #

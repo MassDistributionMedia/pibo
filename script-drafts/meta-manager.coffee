@@ -1,0 +1,1 @@
+# A file dealing with all settings of Hubot.
