@@ -7,13 +7,14 @@
 #  mikeumus
 #
 #
-# cmdArray 
+# cmdArray # these need to do in the script's folder and in the script's package.json or cmd.json
 ##
 ###
   cmdNet = [
     {
       "name": "npm",
       "format": "npm version <name>",
+      "tags": ["npm","version"],
       "test-vectors": "various,tests,used,against,cmd" - # To report it's health as a fraction of how many tests the cmd took and how many it passed.
       "intention": "Output npm version of submitted module name.",
       "scale": 1-10, # The scale of which users and Hubot rates itself on this task. Used in control-loop to iterate towards a better average rating for this task.
@@ -73,8 +74,11 @@ module.exports = (robot) ->
 #   any error is added to a log file showing error outpt and timestamp.
 #   `<scriptName> last error` - cmd responds with the scripts last error.
 #   `<scriptName> list errors` - cmd to list all unique errors reporting how many times each error was seen in output.
-#
-#
+#   `cmd for <short description of desired command outcome.>` - List commands with similar tags & semanticated versions of script descriptors.
+#   Append "notes.md" to bottom of any script if the global script manager says so.
+#    notes.md appendage can be set per script in the scripts header meta as well.
+#    notes.md on save is compared to what's appended to the bottom of the script and compares overwriting either in favor of the newer version.
+#    notes.md used for documentation as well (maybe via yui-docs).
 #
 #
 #
