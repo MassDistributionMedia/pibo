@@ -53,13 +53,13 @@ module.exports = (robot) ->
 #  Top-Down/Vision
 #   Train Hubot a list of commands to execute if it hears them in chatting.
 #   Cmds are trained via eardropping.coffee
-#   Cmds are save in arrays in a json format
-#   There can multiple cmd arrays trained
+#   Cmds are save in arrays in a json format.
+#   There can multiple cmd arrays trained.
 #
 #  To Do
 #   script-list cmd via recycled code from reload.coffee
 #   `cmdNet update` - cmd to check if all cmdNet commands are installed and functioning via various tests. 
-#                   - if it passes any/all critial tests 
+#                   - if it passes any/all critial tests.
 #
 #
 # cmdArray
@@ -67,5 +67,19 @@ module.exports = (robot) ->
 #   recycle github connecting from: https://github.com/github/hubot-scripts/blob/master/src/scripts/github-commit-link.coffee
 #
 #  
+#
+# ideas
+#  script log
+#   any error is added to a log file showing error outpt and timestamp.
+#   `<scriptName> last error` - cmd responds with the scripts last error.
+#   `<scriptName> list errors` - cmd to list all unique errors reporting how many times each error was seen in output.
+#
+#
+#
+#
+#
+#
+#
+#
 #
 #

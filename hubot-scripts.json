@@ -5,20 +5,15 @@
     "advice.coffee",
     "abstract.coffee",
     "bang-bang.coffee",
-    "cleverbot.coffee",
     "email.coffee",
-    "emoji.coffee",
     "eval.coffee",
     "history.coffee",
     "time.coffee",
     "github-credentials.coffee",
-    "npm.coffee",
     "reload.coffee",
     "update.coffee",
     "setenv.coffee",
     "sosearch.coffee",
-    "spot.coffee",
-    "steam.coffee",
-    "javascript-sandbox.coffee"
+    "spot.coffee"
     
 ]
