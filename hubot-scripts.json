@@ -1,15 +1,20 @@
 [
 
+    "ascii.coffee",
     "shipit.coffee", 
     "advice.coffee",
     "abstract.coffee",
     "bang-bang.coffee",
+    "cleverbot.coffee",
     "emoji.coffee",
     "history.coffee",
+    "time.coffee",
+    "github-credentials.coffee",
     "reload.coffee",
     "update.coffee",
     "setenv.coffee",
     "sosearch.coffee",
-    "spot.coffee"
+    "spot.coffee",
+    "steam.coffee"
     
 ]
