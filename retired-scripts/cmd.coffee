@@ -1,0 +1,71 @@
+# List of cmd's to train Hubot what to listen for and how to respond.
+#
+# Via eardropping.coffee:
+#  "hubot when you hear <pattern> do <something hubot does>" - Setup a ear dropping event
+#
+# Author
+#  mikeumus
+#
+#
+# cmdArray 
+##
+###
+  cmdNet = [
+    {
+      "name": "npm",
+      "format": "npm version <name>",
+      "test-vectors": "various,tests,used,against,cmd" - # To report it's health as a fraction of how many tests the cmd took and how many it passed.
+      "intention": "Output npm version of submitted module name.",
+      "scale": 1-10, # The scale of which users and Hubot rates itself on this task. Used in control-loop to iterate towards a better average rating for this task.
+      "url": "https://raw.github.com/github/hubot-scripts/master/src/scripts/npm.coffee"
+    },
+    {
+      "name": "reload",
+      "format": "reload all scripts",
+      "url": "https://raw.github.com/github/hubot-scripts/master/src/scripts/reload.coffee"
+    },
+  ]
+###
+##
+#
+
+# Indentifier eardropped to listen for commands
+cmdPromt = "`" # or robot.name
+
+cmdNet = [
+    #(pattern,action) or #{pattern & action}
+    # Backticks to indentify command 
+    "npm version <name>", # via npm.coffee: hubot npm version <package name> - returns npm package version if it exists
+    "restart", # via restart.coffee: 
+]
+
+
+module.exports = (robot) ->
+    cmdList[i] = cmdNet.length
+    for each cmd in cmdNet
+        .exec(cmdNet[i])
+        
+    cmd(action)
+        .exec(action)
+        
+        
+# Notes
+#  Top-Down/Vision
+#   Train Hubot a list of commands to execute if it hears them in chatting.
+#   Cmds are trained via eardropping.coffee
+#   Cmds are save in arrays in a json format
+#   There can multiple cmd arrays trained
+#
+#  To Do
+#   script-list cmd via recycled code from reload.coffee
+#   `cmdNet update` - cmd to check if all cmdNet commands are installed and functioning via various tests. 
+#                   - if it passes any/all critial tests 
+#
+#
+# cmdArray
+#  url can be a git repo too: https://github.com/github/hubot-scripts/blob/master/src/scripts/github-commit-link.coffee
+#   recycle github connecting from: https://github.com/github/hubot-scripts/blob/master/src/scripts/github-commit-link.coffee
+#
+#  
+#
+#
