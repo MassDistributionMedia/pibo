@@ -61,6 +61,7 @@ module.exports = (robot) ->
 #   script-list cmd via recycled code from reload.coffee
 #   `cmdNet update` - cmd to check if all cmdNet commands are installed and functioning via various tests. 
 #                   - if it passes any/all critial tests.
+#   Use array mapping for indexing commands: http://www.joelonsoftware.com/items/2006/08/01.html
 #
 #
 # cmdArray
